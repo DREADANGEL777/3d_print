@@ -1,0 +1,513 @@
+export const translations = {
+  ua: {
+    nav: {
+      services: 'Послуги',
+      technologies: 'Технології',
+      pricing: 'Ціни',
+      portfolio: 'Портфоліо',
+      reviews: 'Відгуки',
+      contact: 'Контакти',
+    },
+    header: {
+      order: 'Замовити',
+      menu: 'Меню',
+    },
+    hero: {
+      eyebrow: 'Студія 3D-моделювання та друку',
+      titleStart: 'Втілюємо ваші ідеї у ',
+      titleAccent: 'фізичну форму',
+      subtitle:
+        'Від цифрової моделі до готового виробу: прототипи, мініатюри, ювелірні вироби та технічні деталі. Друкуємо з точністю до 35 мікрон і доставляємо по всій Україні.',
+      ctaPrimary: 'Розрахувати вартість',
+      ctaSecondary: 'Переглянути роботи',
+      stats: [
+        { value: '2 500+', label: 'виконаних проєктів' },
+        { value: '8 років', label: 'на ринку' },
+        { value: '35 мкм', label: 'точність друку' },
+        { value: '24 год', label: 'мінімальний термін' },
+      ],
+    },
+    services: {
+      title: 'Що ми друкуємо',
+      subtitle: 'Повний цикл: моделювання, друк, постобробка та доставка',
+      order: 'Замовити друк →',
+      items: [
+        {
+          icon: '🏰',
+          title: 'Мініатюри',
+          text: 'Деталізовані масштабні моделі для настільних ігор, колекцій та макетів.',
+        },
+        {
+          icon: '⚙️',
+          title: 'Функціональні деталі',
+          text: 'Компоненти складної форми для промисловості й побуту, стійкі до навантажень.',
+        },
+        {
+          icon: '🦷',
+          title: 'Стоматологія',
+          text: 'Коронки, протези та хірургічні шаблони з біосумісних матеріалів.',
+        },
+        {
+          icon: '💍',
+          title: 'Ювелірні вироби',
+          text: 'Каблучки, сережки та підвіски за DLP-технологією з високою деталізацією.',
+        },
+        {
+          icon: '🏺',
+          title: 'Декор',
+          text: 'Вази, фігурки, фоторамки та ексклюзивні предмети інтерʼєру.',
+        },
+        {
+          icon: '🚀',
+          title: 'Промислові прототипи',
+          text: 'Швидке прототипування для тестування ідей перед серійним виробництвом.',
+        },
+        {
+          icon: '🔩',
+          title: 'Технічні деталі',
+          text: 'Шестерні, підшипники, кріплення та запчастини, яких немає у продажу.',
+        },
+        {
+          icon: '🖥️',
+          title: '3D-моделювання',
+          text: 'Створюємо модель з нуля за кресленням, фото або власним ескізом.',
+        },
+      ],
+    },
+    technologies: {
+      title: 'Технології друку',
+      subtitle: 'Підберемо оптимальну технологію під ваше завдання та бюджет',
+      accuracy: 'Точність:',
+      noteStrong: 'Заповнення виробу 15–100%.',
+      noteText:
+        ' Оптимізуємо внутрішню структуру деталі — ви платите лише за матеріал, який дійсно потрібен для міцності вашого виробу.',
+      items: [
+        {
+          name: 'FDM',
+          full: 'Пошарове наплавлення філамента',
+          accuracy: '100–300 мкм',
+          text: 'Найдоступніша технологія для функціональних деталей, корпусів та великих виробів. Широкий вибір пластиків: PLA, ABS, PETG, нейлон.',
+        },
+        {
+          name: 'SLA / DLP',
+          full: 'Фотополімерний друк',
+          accuracy: '35–50 мкм',
+          text: 'Висока точність та ідеально гладка поверхня. Оптимально для мініатюр, ювелірних майстер-моделей та стоматології.',
+        },
+        {
+          name: 'SLS',
+          full: 'Селективне лазерне спікання',
+          accuracy: '80–120 мкм',
+          text: 'Друк порошком PA 12 без підтримок. Міцні функціональні деталі складної геометрії дрібними та середніми серіями.',
+        },
+      ],
+    },
+    process: {
+      title: 'Як ми працюємо',
+      subtitle: 'Пʼять простих кроків від ідеї до готового виробу',
+      steps: [
+        {
+          num: '01',
+          title: 'Заявка',
+          text: 'Надішліть модель або опис ідеї — порахуємо вартість протягом години.',
+        },
+        {
+          num: '02',
+          title: 'Оплата',
+          text: 'Онлайн, за реквізитами або накладеним платежем при отриманні.',
+        },
+        {
+          num: '03',
+          title: '3D-друк',
+          text: 'Друкуємо на професійному обладнанні з контролем якості на кожному шарі.',
+        },
+        {
+          num: '04',
+          title: 'Постобробка',
+          text: 'Шліфування, фарбування та фінішна обробка за потреби.',
+        },
+        {
+          num: '05',
+          title: 'Доставка',
+          text: 'Новою Поштою по всій Україні або самовивіз зі студії.',
+        },
+      ],
+    },
+    pricing: {
+      title: 'Ціни',
+      subtitle: 'Знижки від обсягу: 50 г — 5%, 100 г — 10%, 250 г+ — 15%',
+      featured: 'Найпопулярніше',
+      cta: 'Розрахувати',
+      plans: [
+        {
+          name: 'FDM-друк',
+          price: 'від 6 ₴',
+          unit: 'за грам',
+          features: [
+            'PLA, ABS, PETG — 6–12 ₴/г',
+            'Гнучкі матеріали — 14–21 ₴/г',
+            'Шар від 100 мкм',
+            'Мінімальне замовлення 150 ₴',
+          ],
+          featured: false,
+        },
+        {
+          name: 'SLA / DLP-друк',
+          price: 'від 27 ₴',
+          unit: 'за грам',
+          features: [
+            'Фотополімерні смоли — 27–33 ₴/г',
+            'Точність до 35 мкм',
+            'Ідеальна поверхня без шарів',
+            'Ювелірні та дентальні смоли',
+          ],
+          featured: true,
+        },
+        {
+          name: 'SLS-друк',
+          price: 'від 30 ₴',
+          unit: 'за грам',
+          features: [
+            'Порошок PA 12 — 30–36 ₴/г',
+            'Без підтримок',
+            'Складна геометрія',
+            'Дрібносерійне виробництво',
+          ],
+          featured: false,
+        },
+      ],
+    },
+    portfolio: {
+      title: 'Портфоліо',
+      subtitle: 'Проєкти, якими ми пишаємось',
+      projects: [
+        { title: 'Решітка радіатора Chevrolet Corvette', category: 'Автотюнінг' },
+        { title: 'Майстер-модель персонажа для лиття', category: 'Колекційні фігури' },
+        { title: 'Форми для харчового силікону', category: 'Кондитерське виробництво' },
+        { title: 'Нагороди для IT-конференції', category: 'Корпоративні подарунки' },
+      ],
+    },
+    slider: {
+      hint: 'Обертайте модель мишею · 360°',
+      prev: 'Попередня модель',
+      next: 'Наступна модель',
+      slides: [
+        { title: 'Решітка радіатора Chevrolet Corvette', category: 'Автотюнінг' },
+        { title: 'Майстер-модель персонажа', category: 'Колекційні фігури' },
+        { title: 'Форма для харчового силікону', category: 'Кондитерське виробництво' },
+        { title: 'Нагорода для IT-конференції', category: 'Корпоративні подарунки' },
+      ],
+    },
+    testimonials: {
+      title: 'Відгуки клієнтів',
+      subtitle: '99% позитивних оцінок на Prom.ua та Google Maps',
+      starsAria: '5 з 5 зірок',
+      reviews: [
+        {
+          name: 'Олена К.',
+          city: 'Київ',
+          text: 'Замовляла мініатюри для настільної гри — деталізація неймовірна! Надрукували за два дні та відправили Новою Поштою.',
+        },
+        {
+          name: 'Андрій М.',
+          city: 'Львів',
+          text: 'Потрібна була шестерня для старої кавомашини, якої ніде немає. Змоделювали за фото та надрукували з нейлону — працює вже пів року.',
+        },
+        {
+          name: 'Марія С.',
+          city: 'Одеса',
+          text: 'Співпрацюємо як кондитерська студія: форми для силікону завжди ідеальні. Професійна команда та швидка комунікація.',
+        },
+        {
+          name: 'Дмитро В.',
+          city: 'Дніпро',
+          text: 'Прототип корпусу для нашого стартапу зробили за тиждень разом із трьома ітераціями правок. Рекомендую!',
+        },
+      ],
+    },
+    contact: {
+      title: 'Звʼяжіться з нами',
+      lead: 'Надішліть модель або просто опишіть ідею — розрахуємо вартість протягом години в робочий час.',
+      phoneLabel: 'Телефон',
+      emailLabel: 'Email',
+      addressLabel: 'Адреса',
+      address: 'м. Львів, вул. Прикладна, 8',
+      hoursLabel: 'Графік',
+      hours: 'ПН–ПТ 9:00 – 18:00',
+      formTitle: 'Розрахувати вартість',
+      nameLabel: 'Імʼя',
+      namePlaceholder: 'Ваше імʼя',
+      phoneFieldLabel: 'Телефон',
+      phonePlaceholder: '+38 (0__) ___-__-__',
+      messageLabel: 'Опис завдання',
+      messagePlaceholder: 'Що потрібно надрукувати або змоделювати?',
+      error: 'Не вдалося надіслати заявку. Спробуйте ще раз або зателефонуйте нам.',
+      sending: 'Надсилаємо…',
+      submit: 'Надіслати заявку',
+      note: 'Натискаючи кнопку, ви погоджуєтесь з обробкою персональних даних',
+      successTitle: 'Дякуємо за заявку!',
+      successText: 'Ми звʼяжемося з вами протягом години в робочий час.',
+    },
+    footer: {
+      tagline: 'Студія 3D-моделювання та друку. Від ідеї до готового виробу.',
+      address: 'м. Львів, вул. Прикладна, 8',
+      rights: 'Усі права захищено.',
+    },
+  },
+
+  en: {
+    nav: {
+      services: 'Services',
+      technologies: 'Technologies',
+      pricing: 'Pricing',
+      portfolio: 'Portfolio',
+      reviews: 'Reviews',
+      contact: 'Contact',
+    },
+    header: {
+      order: 'Order now',
+      menu: 'Menu',
+    },
+    hero: {
+      eyebrow: '3D modeling & printing studio',
+      titleStart: 'We turn your ideas into ',
+      titleAccent: 'physical form',
+      subtitle:
+        'From a digital model to a finished product: prototypes, miniatures, jewelry and technical parts. We print with up to 35-micron precision and deliver across Ukraine.',
+      ctaPrimary: 'Get a quote',
+      ctaSecondary: 'View our work',
+      stats: [
+        { value: '2,500+', label: 'completed projects' },
+        { value: '8 years', label: 'on the market' },
+        { value: '35 µm', label: 'print precision' },
+        { value: '24 h', label: 'minimum lead time' },
+      ],
+    },
+    services: {
+      title: 'What we print',
+      subtitle: 'Full cycle: modeling, printing, post-processing and delivery',
+      order: 'Order printing →',
+      items: [
+        {
+          icon: '🏰',
+          title: 'Miniatures',
+          text: 'Detailed scale models for tabletop games, collections and dioramas.',
+        },
+        {
+          icon: '⚙️',
+          title: 'Functional parts',
+          text: 'Complex-shaped components for industry and home, built to withstand loads.',
+        },
+        {
+          icon: '🦷',
+          title: 'Dentistry',
+          text: 'Crowns, dentures and surgical guides made of biocompatible materials.',
+        },
+        {
+          icon: '💍',
+          title: 'Jewelry',
+          text: 'Rings, earrings and pendants made with high-detail DLP technology.',
+        },
+        {
+          icon: '🏺',
+          title: 'Decor',
+          text: 'Vases, figurines, photo frames and exclusive interior pieces.',
+        },
+        {
+          icon: '🚀',
+          title: 'Industrial prototypes',
+          text: 'Rapid prototyping to test ideas before mass production.',
+        },
+        {
+          icon: '🔩',
+          title: 'Technical parts',
+          text: 'Gears, bearings, mounts and spare parts you can’t find in stores.',
+        },
+        {
+          icon: '🖥️',
+          title: '3D modeling',
+          text: 'We create a model from scratch based on a drawing, photo or your sketch.',
+        },
+      ],
+    },
+    technologies: {
+      title: 'Printing technologies',
+      subtitle: 'We’ll pick the optimal technology for your task and budget',
+      accuracy: 'Precision:',
+      noteStrong: 'Infill from 15% to 100%.',
+      noteText:
+        ' We optimize the internal structure of the part — you only pay for the material your product actually needs for strength.',
+      items: [
+        {
+          name: 'FDM',
+          full: 'Fused deposition modeling',
+          accuracy: '100–300 µm',
+          text: 'The most affordable technology for functional parts, enclosures and large items. Wide choice of plastics: PLA, ABS, PETG, nylon.',
+        },
+        {
+          name: 'SLA / DLP',
+          full: 'Photopolymer resin printing',
+          accuracy: '35–50 µm',
+          text: 'High precision and a perfectly smooth surface. Ideal for miniatures, jewelry master models and dentistry.',
+        },
+        {
+          name: 'SLS',
+          full: 'Selective laser sintering',
+          accuracy: '80–120 µm',
+          text: 'PA 12 powder printing with no supports. Strong functional parts of complex geometry in small and medium batches.',
+        },
+      ],
+    },
+    process: {
+      title: 'How we work',
+      subtitle: 'Five simple steps from idea to finished product',
+      steps: [
+        {
+          num: '01',
+          title: 'Request',
+          text: 'Send us a model or describe your idea — we’ll quote the cost within an hour.',
+        },
+        {
+          num: '02',
+          title: 'Payment',
+          text: 'Online, by bank transfer or cash on delivery.',
+        },
+        {
+          num: '03',
+          title: '3D printing',
+          text: 'We print on professional equipment with quality control on every layer.',
+        },
+        {
+          num: '04',
+          title: 'Post-processing',
+          text: 'Sanding, painting and finishing on request.',
+        },
+        {
+          num: '05',
+          title: 'Delivery',
+          text: 'Nova Poshta shipping across Ukraine or pickup from the studio.',
+        },
+      ],
+    },
+    pricing: {
+      title: 'Pricing',
+      subtitle: 'Volume discounts: 50 g — 5%, 100 g — 10%, 250 g+ — 15%',
+      featured: 'Most popular',
+      cta: 'Get a quote',
+      plans: [
+        {
+          name: 'FDM printing',
+          price: 'from ₴6',
+          unit: 'per gram',
+          features: [
+            'PLA, ABS, PETG — ₴6–12/g',
+            'Flexible materials — ₴14–21/g',
+            'Layer from 100 µm',
+            'Minimum order ₴150',
+          ],
+          featured: false,
+        },
+        {
+          name: 'SLA / DLP printing',
+          price: 'from ₴27',
+          unit: 'per gram',
+          features: [
+            'Photopolymer resins — ₴27–33/g',
+            'Precision up to 35 µm',
+            'Perfect layer-free surface',
+            'Jewelry and dental resins',
+          ],
+          featured: true,
+        },
+        {
+          name: 'SLS printing',
+          price: 'from ₴30',
+          unit: 'per gram',
+          features: [
+            'PA 12 powder — ₴30–36/g',
+            'No supports',
+            'Complex geometry',
+            'Small-batch production',
+          ],
+          featured: false,
+        },
+      ],
+    },
+    portfolio: {
+      title: 'Portfolio',
+      subtitle: 'Projects we are proud of',
+      projects: [
+        { title: 'Chevrolet Corvette radiator grille', category: 'Car tuning' },
+        { title: 'Character master model for casting', category: 'Collectible figures' },
+        { title: 'Food-grade silicone molds', category: 'Confectionery production' },
+        { title: 'Awards for an IT conference', category: 'Corporate gifts' },
+      ],
+    },
+    slider: {
+      hint: 'Drag to rotate the model · 360°',
+      prev: 'Previous model',
+      next: 'Next model',
+      slides: [
+        { title: 'Chevrolet Corvette radiator grille', category: 'Car tuning' },
+        { title: 'Character master model', category: 'Collectible figures' },
+        { title: 'Food-grade silicone mold', category: 'Confectionery production' },
+        { title: 'IT conference award', category: 'Corporate gifts' },
+      ],
+    },
+    testimonials: {
+      title: 'Client reviews',
+      subtitle: '99% positive ratings on Prom.ua and Google Maps',
+      starsAria: '5 out of 5 stars',
+      reviews: [
+        {
+          name: 'Olena K.',
+          city: 'Kyiv',
+          text: 'I ordered miniatures for a board game — the detail is incredible! Printed in two days and shipped by Nova Poshta.',
+        },
+        {
+          name: 'Andrii M.',
+          city: 'Lviv',
+          text: 'I needed a gear for an old coffee machine that is nowhere to be found. They modeled it from a photo and printed it in nylon — it has been working for half a year.',
+        },
+        {
+          name: 'Maria S.',
+          city: 'Odesa',
+          text: 'We work together as a confectionery studio: the silicone molds are always perfect. Professional team and fast communication.',
+        },
+        {
+          name: 'Dmytro V.',
+          city: 'Dnipro',
+          text: 'They made a housing prototype for our startup in a week, including three iterations of revisions. Highly recommend!',
+        },
+      ],
+    },
+    contact: {
+      title: 'Get in touch',
+      lead: 'Send us a model or simply describe your idea — we’ll quote the cost within an hour during business hours.',
+      phoneLabel: 'Phone',
+      emailLabel: 'Email',
+      addressLabel: 'Address',
+      address: '8 Prykladna St., Lviv',
+      hoursLabel: 'Hours',
+      hours: 'Mon–Fri 9:00 – 18:00',
+      formTitle: 'Get a quote',
+      nameLabel: 'Name',
+      namePlaceholder: 'Your name',
+      phoneFieldLabel: 'Phone',
+      phonePlaceholder: '+38 (0__) ___-__-__',
+      messageLabel: 'Task description',
+      messagePlaceholder: 'What do you need printed or modeled?',
+      error: 'Failed to send the request. Please try again or give us a call.',
+      sending: 'Sending…',
+      submit: 'Send request',
+      note: 'By clicking the button you agree to the processing of personal data',
+      successTitle: 'Thank you for your request!',
+      successText: 'We will contact you within an hour during business hours.',
+    },
+    footer: {
+      tagline: '3D modeling & printing studio. From idea to finished product.',
+      address: '8 Prykladna St., Lviv',
+      rights: 'All rights reserved.',
+    },
+  },
+}
