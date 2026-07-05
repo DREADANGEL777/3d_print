@@ -1,4 +1,7 @@
 import { useLang } from '../i18n.jsx'
+import Reveal from './Reveal.jsx'
+
+const cardVariants = ['left', 'zoom', 'right']
 
 export default function Pricing() {
   const { t } = useLang()
@@ -6,14 +9,21 @@ export default function Pricing() {
   return (
     <section id="pricing" className="section section--alt">
       <div className="container">
-        <h2 className="section__title">{t.pricing.title}</h2>
-        <p className="section__subtitle">{t.pricing.subtitle}</p>
+        <Reveal as="h2" className="section__title" variant="blur">
+          {t.pricing.title}
+        </Reveal>
+        <Reveal as="p" className="section__subtitle" delay={100}>
+          {t.pricing.subtitle}
+        </Reveal>
 
         <div className="pricing__grid">
-          {t.pricing.plans.map((p) => (
-            <article
+          {t.pricing.plans.map((p, i) => (
+            <Reveal
+              as="article"
               key={p.name}
               className={`card pricing-card ${p.featured ? 'pricing-card--featured' : ''}`}
+              variant={cardVariants[i % cardVariants.length]}
+              delay={i * 120}
             >
               {p.featured && <div className="pricing-card__tag">{t.pricing.featured}</div>}
               <h3 className="pricing-card__name">{p.name}</h3>
@@ -28,7 +38,7 @@ export default function Pricing() {
               <a href="#contact" className={`btn ${p.featured ? 'btn--primary' : 'btn--ghost'}`}>
                 {t.pricing.cta}
               </a>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

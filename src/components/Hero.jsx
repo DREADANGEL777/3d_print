@@ -1,4 +1,5 @@
 import { useLang } from '../i18n.jsx'
+import Reveal from './Reveal.jsx'
 
 export default function Hero() {
   const { t } = useLang()
@@ -8,23 +9,27 @@ export default function Hero() {
       <div className="hero__glow" aria-hidden="true" />
       <div className="container hero__inner">
         <div className="hero__content">
-          <p className="hero__eyebrow">{t.hero.eyebrow}</p>
-          <h1 className="hero__title">
+          <Reveal as="p" className="hero__eyebrow" variant="down">
+            {t.hero.eyebrow}
+          </Reveal>
+          <Reveal as="h1" className="hero__title" variant="blur" delay={100}>
             {t.hero.titleStart}
             <span className="text-accent">{t.hero.titleAccent}</span>
-          </h1>
-          <p className="hero__subtitle">{t.hero.subtitle}</p>
-          <div className="hero__actions">
+          </Reveal>
+          <Reveal as="p" className="hero__subtitle" delay={220}>
+            {t.hero.subtitle}
+          </Reveal>
+          <Reveal className="hero__actions" delay={340}>
             <a href="#contact" className="btn btn--primary">
               {t.hero.ctaPrimary}
             </a>
             <a href="#portfolio" className="btn btn--ghost">
               {t.hero.ctaSecondary}
             </a>
-          </div>
+          </Reveal>
         </div>
 
-        <div className="hero__visual" aria-hidden="true">
+        <Reveal className="hero__visual" variant="zoom" delay={400} aria-hidden="true">
           <div className="hero__cube">
             <div className="cube">
               <div className="cube__face cube__face--front" />
@@ -35,18 +40,18 @@ export default function Hero() {
               <div className="cube__face cube__face--bottom" />
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
 
       <div className="container">
-        <div className="hero__stats">
+        <Reveal className="hero__stats" variant="up" delay={480}>
           {t.hero.stats.map((s) => (
             <div key={s.label} className="stat">
               <div className="stat__value">{s.value}</div>
               <div className="stat__label">{s.label}</div>
             </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   )

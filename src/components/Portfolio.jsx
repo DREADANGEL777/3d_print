@@ -1,4 +1,5 @@
 import ModelSlider from './ModelSlider.jsx'
+import Reveal from './Reveal.jsx'
 import { useLang } from '../i18n.jsx'
 
 const projectVisuals = [
@@ -30,14 +31,20 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="section">
       <div className="container">
-        <h2 className="section__title">{t.portfolio.title}</h2>
-        <p className="section__subtitle">{t.portfolio.subtitle}</p>
+        <Reveal as="h2" className="section__title" variant="blur">
+          {t.portfolio.title}
+        </Reveal>
+        <Reveal as="p" className="section__subtitle" delay={100}>
+          {t.portfolio.subtitle}
+        </Reveal>
 
-        <ModelSlider />
+        <Reveal variant="zoom" delay={150}>
+          <ModelSlider />
+        </Reveal>
 
         <div className="portfolio__grid">
           {t.portfolio.projects.map((p, i) => (
-            <article key={p.title} className="portfolio-card">
+            <Reveal as="article" key={p.title} className="portfolio-card" delay={i * 90}>
               <div
                 className="portfolio-card__image"
                 style={{ background: projectVisuals[i].gradient }}
@@ -53,7 +60,7 @@ export default function Portfolio() {
                 </div>
                 <h3 className="portfolio-card__title">{p.title}</h3>
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

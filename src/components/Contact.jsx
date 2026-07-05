@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useLang } from '../i18n.jsx'
+import Reveal from './Reveal.jsx'
 
 export default function Contact() {
   const [status, setStatus] = useState('idle') // idle | sending | success | error
@@ -37,7 +38,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section">
       <div className="container contact">
-        <div className="contact__info">
+        <Reveal className="contact__info" variant="left">
           <h2 className="section__title section__title--left">{t.contact.title}</h2>
           <p className="contact__lead">{t.contact.lead}</p>
 
@@ -67,9 +68,10 @@ export default function Contact() {
               </a>
             ))}
           </div>
-        </div>
+        </Reveal>
 
-        <form className="card contact__form" onSubmit={handleSubmit}>
+        <Reveal variant="right" delay={120}>
+          <form className="card contact__form" onSubmit={handleSubmit}>
           {status === 'success' ? (
             <div className="contact__success">
               <div className="contact__success-icon">✓</div>
@@ -121,7 +123,8 @@ export default function Contact() {
               <p className="contact__form-note">{t.contact.note}</p>
             </>
           )}
-        </form>
+          </form>
+        </Reveal>
       </div>
     </section>
   )

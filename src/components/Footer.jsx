@@ -1,4 +1,5 @@
 import { useLang } from '../i18n.jsx'
+import Reveal from './Reveal.jsx'
 
 const navOrder = ['services', 'technologies', 'pricing', 'portfolio', 'reviews', 'contact']
 
@@ -7,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="container footer__inner">
+      <Reveal className="container footer__inner">
         <div className="footer__brand">
           <a href="#" className="logo">
             <span className="logo__mark">▲</span>
@@ -29,7 +30,7 @@ export default function Footer() {
           <a href="mailto:info@polyforge.ua">info@polyforge.ua</a>
           <span>{t.footer.address}</span>
         </div>
-      </div>
+      </Reveal>
       <div className="container footer__bottom">
         <span>
           © {new Date().getFullYear()} PolyForge. {t.footer.rights}

@@ -53,6 +53,124 @@ a {
   color: var(--accent);
 }
 
+/* ===== Scroll-reveal animations =====
+   Подвійний клас .reveal.reveal — щоб перебити transition у .card
+   на час анімації появи (після неї Reveal знімає класи). */
+.reveal.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.reveal--up {
+  transform: translateY(32px);
+}
+
+.reveal--down {
+  transform: translateY(-32px);
+}
+
+.reveal--left {
+  transform: translateX(-40px);
+}
+
+.reveal--right {
+  transform: translateX(40px);
+}
+
+.reveal--zoom {
+  transform: scale(0.92);
+}
+
+.reveal--blur {
+  transform: translateY(20px);
+  filter: blur(10px);
+}
+
+.reveal.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* Шапка мʼяко зʼїжджає згори при завантаженні */
+@keyframes header-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.header {
+  animation: header-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Пульсація сяйва у hero */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+.hero__glow {
+  animation: glow-pulse 7s ease-in-out infinite;
+}
+
+/* Іконки сервісів «оживають» при наведенні */
+.service-card__icon {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.service-card:hover .service-card__icon {
+  transform: translateY(-6px) rotate(-8deg) scale(1.15);
+}
+
+/* Емодзі у портфоліо злегка збільшується */
+.portfolio-card__icon {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.portfolio-card:hover .portfolio-card__icon {
+  transform: scale(1.2) rotate(6deg);
+}
+
+/* Номер кроку підстрибує при наведенні */
+.process__step:hover .process__num {
+  color: var(--accent-hover);
+  transform: translateY(-4px);
+}
+
+.process__num {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Доступність: вимикаємо все для prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  .header,
+  .hero__glow,
+  .cube {
+    animation: none !important;
+  }
+}
+
 /* ===== Buttons ===== */
 .btn {
   display: inline-flex;
