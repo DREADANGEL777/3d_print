@@ -1,27 +1,27 @@
-import ModelSlider from './ModelSlider.jsx'
-import Reveal from './Reveal.jsx'
-import { useLang } from '../i18n.jsx'
+import ModelSlider from "./ModelSlider.jsx"
+import Reveal from "./Reveal.jsx"
+import { useLang } from "../i18n.jsx"
 
 const projectVisuals = [
   {
-    year: '2026',
-    gradient: 'linear-gradient(135deg, #2d2416 0%, #4a3413 100%)',
-    icon: '🏎️',
+    year: "2026",
+    gradient: "linear-gradient(135deg,#20314d,#30588c)",
+    icon: "⚙️",
   },
   {
-    year: '2025',
-    gradient: 'linear-gradient(135deg, #1f2a1f 0%, #2e4420 100%)',
-    icon: '🗿',
+    year: "2026",
+    gradient: "linear-gradient(135deg,#2b2b2b,#575757)",
+    icon: "🐉",
   },
   {
-    year: '2025',
-    gradient: 'linear-gradient(135deg, #2a1f2a 0%, #44203c 100%)',
-    icon: '🍫',
+    year: "2026",
+    gradient: "linear-gradient(135deg,#29463b,#3b7d61)",
+    icon: "📱",
   },
   {
-    year: '2025',
-    gradient: 'linear-gradient(135deg, #16222d 0%, #133a4a 100%)',
-    icon: '🏆',
+    year: "2026",
+    gradient: "linear-gradient(135deg,#493019,#8f5d29)",
+    icon: "🔩",
   },
 ]
 

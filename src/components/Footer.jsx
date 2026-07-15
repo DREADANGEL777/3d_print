@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="footer__contact">
           <a href="tel:+380671234567">+38 (067) 123-45-67</a>
           <a href="mailto:info@polyforge.ua">info@polyforge.ua</a>
-          <span>{t.footer.address}</span>
+          {/* <span>{t.footer.address}</span> */}
         </div>
       </Reveal>
       <div className="container footer__bottom">

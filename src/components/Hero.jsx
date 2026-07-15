@@ -48,7 +48,7 @@ export default function Hero() {
           {t.hero.stats.map((s) => (
             <div key={s.label} className="stat">
               <div className="stat__value">{s.value}</div>
-              <div className="stat__label">{s.label}</div>
+              <div className="stat__label">{s.label} <br /> {s.label2}</div>
             </div>
           ))}
         </Reveal>
