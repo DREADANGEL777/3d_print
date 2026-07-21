@@ -1303,14 +1303,14 @@ a {
 
     border-radius: 32px;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
-    isolation: isolate;
+    /* isolation: isolate;
 
     background:
         radial-gradient(circle at top,
             rgba(255, 205, 70, .12),
-            transparent 55%);
+            transparent 55%); */
 
     transition: transform .45s ease;
 }
@@ -1324,7 +1324,7 @@ a {
     inset: -15%;
 
     border-radius: 50%;
-
+/* 
     background:
         radial-gradient(
             circle,
@@ -1335,7 +1335,7 @@ a {
 
     filter: blur(70px);
 
-    z-index: -2;
+    z-index: -2; */
 
     animation: heroGlow 6s ease-in-out infinite;
 }
@@ -1358,7 +1358,7 @@ a {
 
     border-radius: 50%;
 
-    background:
+    /* background:
         radial-gradient(
             circle,
             rgba(15,35,90,.45),
@@ -1367,7 +1367,7 @@ a {
 
     filter: blur(65px);
 
-    z-index: -3;
+    z-index: -3; */
 }
 
 /* canvas */

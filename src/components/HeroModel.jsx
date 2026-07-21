@@ -1,6 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Environment, Center, ContactShadows, useGLTF } from "@react-three/drei"
-
 import { useEffect, useRef } from "react"
 import * as THREE from "three"
 
@@ -12,24 +11,24 @@ function Model() {
   const { scene } = useGLTF("/models/hero.glb")
 
   useEffect(() => {
-    scene.traverse((child) => {
-      if (!child.isMesh) return
+    // scene.traverse((child) => {
+    //   if (!child.isMesh) return
 
-      child.castShadow = true
-      child.receiveShadow = true
+    //   child.castShadow = true
+    //   child.receiveShadow = true
 
-      child.material = new THREE.MeshPhysicalMaterial({
-        color: "#f6c33b",
+    //   child.material = new THREE.MeshPhysicalMaterial({
+    //     color: "#f6c33b",
 
-        metalness: 0.45,
-        roughness: 0.42,
+    //     metalness: 0.45,
+    //     roughness: 0.42,
 
-        clearcoat: 0.55,
-        clearcoatRoughness: 0.18,
+    //     clearcoat: 0.55,
+    //     clearcoatRoughness: 0.18,
 
-        envMapIntensity: 1.3,
-      })
-    })
+    //     envMapIntensity: 1.3,
+    //   })
+    // })
   }, [scene])
 
   useFrame((state, delta) => {
@@ -54,7 +53,7 @@ function Model() {
 export default function HeroModel() {
   return (
     <Canvas
-      shadows
+      
       dpr={[1, 2]}
       camera={{
         position: [0, 0.3, 4],
@@ -74,9 +73,9 @@ export default function HeroModel() {
 
       <directionalLight position={[-5, 4, -5]} intensity={1.2} />
 
-      <pointLight position={[0, 2, 2]} intensity={18} color="#ffd54f" />
+      {/* <pointLight position={[0, 2, 2]} intensity={18} color="#ffd54f" /> */}
 
-      <Environment preset="studio" />
+      {/* <Environment preset="studio" /> */}
 
       <Model />
 

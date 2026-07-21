@@ -1,7 +1,7 @@
 export const translations = {
   ua: {
     seo: {
-      title: "3D-друк на замовлення в Україні | PLA, PETG, ABS/ASA | Poly Forge",
+      title: "3D-друк на замовлення в Україні | PLA, PETG, ABS/ASA | Forgeti",
       description:
         "Професійний 3D-друк на замовлення в Україні. Друк деталей, прототипів, моделей, корпусів, запчастин і серійних виробів. Технології FDM, SLA, DLP та SLS. Швидкий розрахунок вартості та доставка по всій Україні.",
       keywords:
@@ -301,7 +301,7 @@ export const translations = {
 
   en: {
     seo: {
-      title: "Custom 3D Printing Service | PLA, PETG, ABS/ASA | Poly Forge",
+      title: "Custom 3D Printing Service | PLA, PETG, ABS/ASA | Forgeti",
       description:
         "Professional custom 3D printing service. We manufacture prototypes, functional parts, enclosures, replacement components and small production batches using FDM, SLA, DLP and SLS technologies. Fast quoting and worldwide shipping.",
       keywords:
