@@ -2,7 +2,7 @@ export const schema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
 
-  name: "Forgeti",
+  name: "Fergoti",
 
   description: "Custom 3D Printing",
 
