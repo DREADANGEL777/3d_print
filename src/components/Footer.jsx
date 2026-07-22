@@ -35,7 +35,6 @@ export default function Footer() {
         <div className="footer__contact">
           <a href="tel:+380671234567">+38 (068) 791-83-19</a>
           <a href="mailto:info@polyforge.ua">3dprintadmin42@gmail.com</a>
-          {/* <span>{t.footer.address}</span> */}
         </div>
       </Reveal>
       <div className="container footer__bottom">
