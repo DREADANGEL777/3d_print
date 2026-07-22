@@ -48,7 +48,7 @@ export default function Header() {
             </button>
           </div>
           <a href="tel:+380671234567" className="header__phone">
-            +38 (067) 123-45-67
+            +38 (068) 791-83-19
           </a>
           <a href="#contact" className="btn btn--primary btn--sm">
             {t.header.order}
