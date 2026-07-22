@@ -236,7 +236,7 @@ export const translations = {
     },
     testimonials: {
       title: "Відгуки клієнтів",
-      subtitle: "99% позитивних оцінок на Prom.ua та Google Maps",
+      subtitle: "99% позитивних оцінок",
       starsAria: "5 з 5 зірок",
       reviews: [
         {
@@ -531,7 +531,7 @@ export const translations = {
     },
     testimonials: {
       title: "Client reviews",
-      subtitle: "99% positive ratings on Prom.ua and Google Maps",
+      subtitle: "99% positive ratings",
       starsAria: "5 out of 5 stars",
       reviews: [
         {
