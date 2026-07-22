@@ -1,21 +1,28 @@
-import { useState } from 'react'
-import { useLang } from '../i18n.jsx'
+import { useState } from "react";
+import { useLang } from "../i18n.jsx";
 
-const navOrder = ['services', 'technologies', 'pricing', 'portfolio', 'reviews', 'contact']
+const navOrder = [
+  "services",
+  "technologies",
+  "pricing",
+  "portfolio",
+  "reviews",
+  "contact",
+];
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const { lang, setLang, t } = useLang()
+  const [menuOpen, setMenuOpen] = useState(false);
+  const { lang, setLang, t } = useLang();
 
   return (
     <header className="header">
       <div className="container header__inner">
         <a href="#" className="logo">
           <span className="logo__mark">▲</span>
-          Poly<span className="logo__accent">Forge</span>
+          Fergoti<span className="logo__accent"></span>
         </a>
 
-        <nav className={`nav ${menuOpen ? 'nav--open' : ''}`}>
+        <nav className={`nav ${menuOpen ? "nav--open" : ""}`}>
           {navOrder.map((key) => (
             <a key={key} href={`#${key}`} onClick={() => setMenuOpen(false)}>
               {t.nav[key]}
@@ -27,15 +34,15 @@ export default function Header() {
           <div className="lang-switch" role="group" aria-label="Language">
             <button
               type="button"
-              className={`lang-switch__btn ${lang === 'ua' ? 'lang-switch__btn--active' : ''}`}
-              onClick={() => setLang('ua')}
+              className={`lang-switch__btn ${lang === "ua" ? "lang-switch__btn--active" : ""}`}
+              onClick={() => setLang("ua")}
             >
               UA
             </button>
             <button
               type="button"
-              className={`lang-switch__btn ${lang === 'en' ? 'lang-switch__btn--active' : ''}`}
-              onClick={() => setLang('en')}
+              className={`lang-switch__btn ${lang === "en" ? "lang-switch__btn--active" : ""}`}
+              onClick={() => setLang("en")}
             >
               EN
             </button>
@@ -58,5 +65,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
