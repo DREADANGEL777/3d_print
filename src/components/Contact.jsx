@@ -1,7 +1,7 @@
-import { useState } from "react"
-import { useLang } from "../i18n.jsx"
-import Reveal from "./Reveal.jsx"
-import { uploadToCloudinary } from "../cloudinary.js"
+import { useState } from "react";
+import { useLang } from "../i18n.jsx";
+import Reveal from "./Reveal.jsx";
+import { uploadToCloudinary } from "../cloudinary.js";
 
 const ALLOWED_TYPES = [
   "image/png",
@@ -12,102 +12,113 @@ const ALLOWED_TYPES = [
   "model/3mf",
   "model/gltf-binary",
   "model/gltf+json",
-]
+];
 
-const ALLOWED_EXTENSIONS = ["png", "jpg", "doc", "docx", "stl", "3mf", "amf", "glb", "gltf"]
+const ALLOWED_EXTENSIONS = [
+  "png",
+  "jpg",
+  "doc",
+  "docx",
+  "stl",
+  "3mf",
+  "amf",
+  "glb",
+  "gltf",
+];
 
-const MAX_FILES = 5
-const MAX_SIZE = 50 * 1024 * 1024
+const MAX_FILES = 5;
+const MAX_SIZE = 50 * 1024 * 1024;
 
 export default function Contact() {
-  const [status, setStatus] = useState("idle")
-  const [files, setFiles] = useState([])
-  const [uploadProgress, setUploadProgress] = useState({})
-  const [dragActive, setDragActive] = useState(false)
+  const [status, setStatus] = useState("idle");
+  const [files, setFiles] = useState([]);
+  const [uploadProgress, setUploadProgress] = useState({});
+  const [dragActive, setDragActive] = useState(false);
 
-  const { t } = useLang()
+  const { t } = useLang();
 
   function validateFile(file) {
-    const extension = file.name.split(".").pop().toLowerCase()
+    const extension = file.name.split(".").pop().toLowerCase();
 
-    const isAllowed = ALLOWED_EXTENSIONS.includes(extension)
+    const isAllowed = ALLOWED_EXTENSIONS.includes(extension);
 
     if (!isAllowed) {
-      alert(`${file.name} ${t.contact.allowedFormatAlert}`)
+      alert(`${file.name} ${t.contact.allowedFormatAlert}`);
 
-      return false
+      return false;
     }
 
     if (file.size > MAX_SIZE) {
-      alert(`${file.name} ${t.contact.allowedSizeAlert}`)
+      alert(`${file.name} ${t.contact.allowedSizeAlert}`);
 
-      return false
+      return false;
     }
 
-    return true
+    return true;
   }
 
   function addFiles(selectedFiles) {
-    const newFiles = Array.from(selectedFiles)
+    const newFiles = Array.from(selectedFiles);
 
     if (files.length + newFiles.length > MAX_FILES) {
-      alert(`${t.contact.maxFilesAlert}`)
-      return
+      alert(`${t.contact.maxFilesAlert}`);
+      return;
     }
 
-    const validFiles = newFiles.filter(validateFile)
+    const validFiles = newFiles.filter(validateFile);
 
-    setFiles((prev) => [...prev, ...validFiles])
+    setFiles((prev) => [...prev, ...validFiles]);
   }
 
   function handleDrop(e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    setDragActive(false)
+    setDragActive(false);
 
-    addFiles(e.dataTransfer.files)
+    addFiles(e.dataTransfer.files);
   }
 
   function removeFile(index) {
-    setFiles((prev) => prev.filter((_, i) => i !== index))
+    setFiles((prev) => prev.filter((_, i) => i !== index));
   }
 
   async function handleSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    const form = e.target
+    const form = e.target;
 
-    if (form.botcheck.checked) return
+    if (form.botcheck.checked) return;
 
     if (files.length === 0) {
-      alert(`${t.contact.filesLengthAlert}`)
+      alert(`${t.contact.filesLengthAlert}`);
 
-      return
+      return;
     }
 
-    setStatus("sending")
+    setStatus("sending");
 
     try {
-      const uploadedUrls = []
+      const uploadedUrls = [];
 
       for (const file of files) {
         const url = await uploadToCloudinary(file, (progress) => {
           setUploadProgress((prev) => ({
             ...prev,
             [file.name]: progress,
-          }))
-        })
+          }));
+        });
 
         uploadedUrls.push({
           name: file.name,
           url,
-        })
+        });
       }
 
-      const [{ db }, { addDoc, collection, serverTimestamp }] = await Promise.all([
-        import("../firebase.js"),
-        import("firebase/firestore"),
-      ])
+      const [{ db }, { addDoc, collection, serverTimestamp }] =
+        await Promise.all([
+          import("../firebase.js"),
+          import("firebase/firestore"),
+        ]);
 
       await addDoc(collection(db, "leads"), {
         name: form.name.value.trim(),
@@ -119,18 +130,18 @@ export default function Contact() {
         files: uploadedUrls,
 
         createdAt: serverTimestamp(),
-      })
+      });
 
-      setStatus("success")
+      setStatus("success");
 
-      setFiles([])
+      setFiles([]);
 
-      form.reset()
+      form.reset();
     } catch (err) {
-      console.error("Firestore submit failed:", err)
+      console.error("Firestore submit failed:", err);
 
-      alert(`${t.contact.errAlert}`)
-      setStatus("error")
+      alert(`${t.contact.errAlert}`);
+      setStatus("error");
     }
   }
 
@@ -138,25 +149,31 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="container contact">
         <Reveal className="contact__info" variant="left">
-          <h2 className="section__title section__title--left">{t.contact.title}</h2>
+          <h2 className="section__title section__title--left">
+            {t.contact.title}
+          </h2>
 
           <p className="contact__lead">
             {t.contact.lead}
 
-            <span className="contact__lead contact__lead-span">{t.contact.lead2}</span>
+            <span className="contact__lead contact__lead-span">
+              {t.contact.lead2}
+            </span>
           </p>
 
           <ul className="contact__list">
             <li>
               <span className="contact__label">{t.contact.phoneLabel}</span>
 
-              <a href="tel:+380671234567">+38 (067) 123-45-67</a>
+              <a href="tel:+380671234567">+38 (068) 791-83-19</a>
             </li>
 
             <li>
               <span className="contact__label">{t.contact.emailLabel}</span>
 
-              <a href="mailto:info@polyforge.ua">info@polyforge.ua</a>
+              <a href="mailto:3dprintadmin42@gmail.com">
+                3dprintadmin42@gmail.com
+              </a>
             </li>
 
             <li>
@@ -181,12 +198,21 @@ export default function Contact() {
               <>
                 <h3 className="contact__form-title">{t.contact.formTitle}</h3>
 
-                <input type="checkbox" name="botcheck" className="contact__honeypot" />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  className="contact__honeypot"
+                />
 
                 <label>
                   {t.contact.nameLabel}
 
-                  <input type="text" name="name" placeholder={t.contact.namePlaceholder} required />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder={t.contact.namePlaceholder}
+                    required
+                  />
                 </label>
 
                 <label>
@@ -203,14 +229,18 @@ export default function Contact() {
                 <label>
                   {t.contact.messageLabel}
 
-                  <textarea name="message" rows="4" placeholder={t.contact.messagePlaceholder} />
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder={t.contact.messagePlaceholder}
+                  />
                 </label>
 
                 <div
                   className={dragActive ? "upload-box active" : "upload-box"}
                   onDragOver={(e) => {
-                    e.preventDefault()
-                    setDragActive(true)
+                    e.preventDefault();
+                    setDragActive(true);
                   }}
                   onDragLeave={() => setDragActive(false)}
                   onDrop={handleDrop}
@@ -241,14 +271,18 @@ export default function Contact() {
                   ))}
                 </div>
 
-                {status === "error" && <p className="contact__form-error">{t.contact.error}</p>}
+                {status === "error" && (
+                  <p className="contact__form-error">{t.contact.error}</p>
+                )}
 
                 <button
                   type="submit"
                   className="btn btn--primary btn--full"
                   disabled={status === "sending"}
                 >
-                  {status === "sending" ? `${t.contact.loading}` : t.contact.submit}
+                  {status === "sending"
+                    ? `${t.contact.loading}`
+                    : t.contact.submit}
                 </button>
 
                 <p className="contact__form-note">{t.contact.note}</p>
@@ -258,5 +292,5 @@ export default function Contact() {
         </Reveal>
       </div>
     </section>
-  )
+  );
 }
