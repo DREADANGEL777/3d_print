@@ -5,7 +5,7 @@ export const translations = {
       description:
         "Професійний 3D-друк на замовлення в Україні. Друк деталей, прототипів, моделей, корпусів, запчастин і серійних виробів. Технології FDM, SLA, DLP та SLS. Швидкий розрахунок вартості та доставка по всій Україні.",
       keywords:
-        "3д друк, 3D друк, 3д друк на замовлення, 3D друк на замовлення, друк деталей, друк пластикових деталей, виготовлення деталей, виготовлення пластикових деталей, друк прототипів, швидке прототипування, прототипування, 3д моделі, друк моделей, корпуси для електроніки, корпуси на замовлення, друк запчастин, ремонт деталей, друк шестерень, друк кріплень, інженерний друк, серійне виробництво, малосерійне виробництво, FDM, SLA, DLP, SLS, PETG, PLA, ABS, ASA, TPU, Nylon, PA12, поліамід, Україна, Львів, Київ, Харків, Одеса, Дніпро",
+        "3D друк, 3д друк, 3D друк на замовлення, 3д друк на замовлення, послуги 3D друку, замовити 3D друк, 3D друк Україна, 3D друк деталей, 3D друк пластикових деталей, виготовлення деталей, виготовлення пластикових деталей, виготовлення деталей на замовлення, друк деталей, друк пластикових деталей, виготовлення виробів із пластику, пластикові деталі на замовлення, друк корпусів, корпуси для електроніки, корпуси на замовлення, корпус для Arduino, корпус для Raspberry Pi, корпус для ESP32, друк прототипів, прототипування, швидке прототипування, розробка прототипів, створення прототипів, 3D моделі, 3D моделювання, 3D модель на замовлення, створення 3D моделі, друк моделей, друк макетів, друк сувенірів, друк аксесуарів, друк шестерень, друк зубчастих коліс, друк втулок, друк кріплень, друк кронштейнів, друк ручок, друк заглушок, друк кришок, друк нестандартних деталей, друк запчастин, виготовлення запчастин, відновлення деталей, ремонт пластикових деталей, друк автомобільних деталей, друк деталей для авто, друк деталей для мотоцикла, друк деталей для дрона, друк деталей для FPV, друк деталей для роботів, друк деталей для побутової техніки, друк деталей для обладнання, друк деталей для пилососа, друк деталей для холодильника, друк деталей для пральної машини, друк деталей для кавомашини, друк меблевої фурнітури, друк меблевих кріплень, друк кліпс, друк засувок, друк роликів, друк ніжок, друк гачків, друк тримачів, друк органайзерів, інженерний 3D друк, промисловий 3D друк, професійний 3D друк, адитивне виробництво, серійне виробництво, малосерійне виробництво, дрібносерійне виробництво, виготовлення пластикових виробів, виготовлення прототипів, виробництво деталей, виробництво пластикових деталей, 3D друк великих деталей, точний 3D друк, якісний 3D друк, терміновий 3D друк, швидкий 3D друк, дешевий 3D друк, онлайн 3D друк, 3D друк за кресленням, 3D друк за STL, 3D друк по STL, друк STL моделей, STL друк, друк за фото, PLA, PETG, ABS, ASA, TPU, Nylon, PA12, поліамід, вугленаповнений пластик, карбоновий пластик, міцний пластик, гнучкий пластик, теплостійкий пластик, 3D друк фігурок, 3D друк мініатюр, друк мініатюр, друк статуеток, друк іграшок, друк декору, друк підставок, друк настільних ігор, друк шахів, друк фішок, друк кубиків, друк cosplay аксесуарів, друк масок, друк шоломів, друк реквізиту, друк моделей літаків, друк моделей автомобілів, друк моделей танків, друк моделей кораблів, RC деталі, друк RC деталей, LEGO сумісні деталі, деталі сумісні з LEGO, конструктор сумісні деталі, Pokémon фігурка 3D друк, Minecraft фігурка 3D друк, Roblox фігурка 3D друк, Fortnite фігурка 3D друк, Brawl Stars фігурка 3D друк, Marvel фігурка 3D друк, Star Wars модель 3D друк, Warhammer аксесуари 3D друк, D&D мініатюри, що можна надрукувати на 3D принтері, ідеї для 3D друку, корисні моделі для 3D друку, 3D друк подарунків, подарунок на замовлення, персоналізований подарунок, 3D друк онлайн, надрукувати деталь, надрукувати шестерню, зробити деталь на замовлення, виготовити пластикову деталь, 3д принтер друк, де замовити 3D друк, скільки коштує 3D друк, друк деталі по фото, друк деталі по зразку, виготовлення деталі без креслення, 3D друк Львів, 3D друк Київ, 3D друк Харків, 3D друк Одеса, 3D друк Дніпро, 3D друк Тернопіль, 3D друк Івано-Франківськ, 3D друк Луцьк, 3D друк Рівне, 3D друк Чернівці, 3D друк Вінниця, 3D друк Хмельницький, 3D друк Житомир, 3D друк Черкаси, 3D друк Полтава, 3D друк Суми, 3D друк Чернігів, 3D друк Запоріжжя, 3D друк Миколаїв, 3D друк Ужгород, 3D друк Кропивницький, доставка по Україні",
     },
     nav: {
       services: "Послуги",
@@ -146,7 +146,8 @@ export const translations = {
     },
     pricing: {
       title: "Ціни",
-      subtitle: "Вартість залежить від матеріалу, ваги виробу та складності друку",
+      subtitle:
+        "Вартість залежить від матеріалу, ваги виробу та складності друку",
       featured: "Найпопулярніше",
       cta: "Розрахувати",
       plans: [
@@ -278,7 +279,8 @@ export const translations = {
       phonePlaceholder: "+38 (0__) ___-__-__",
       messageLabel: "Опис завдання",
       messagePlaceholder: "Що потрібно надрукувати або змоделювати?",
-      error: "Не вдалося надіслати заявку. Спробуйте ще раз або зателефонуйте нам.",
+      error:
+        "Не вдалося надіслати заявку. Спробуйте ще раз або зателефонуйте нам.",
       sending: "Надсилаємо…",
       submit: "Надіслати заявку",
       note: "Натискаючи кнопку, ви погоджуєтесь з обробкою персональних даних",
@@ -305,7 +307,7 @@ export const translations = {
       description:
         "Professional custom 3D printing service. We manufacture prototypes, functional parts, enclosures, replacement components and small production batches using FDM, SLA, DLP and SLS technologies. Fast quoting and worldwide shipping.",
       keywords:
-        "3D printing, custom 3D printing, 3D printing service, rapid prototyping, prototype manufacturing, custom parts, functional parts, plastic parts, engineering parts, replacement parts, mechanical components, enclosures, electronics enclosure, product development, low volume manufacturing, small batch production, additive manufacturing, FDM printing, SLA printing, DLP printing, SLS printing, PLA, PETG, ABS, ASA, TPU, Nylon, PA12",
+        "3D printing, custom 3D printing, 3D printing services, order 3D printing, online 3D printing, rapid prototyping, prototyping services, engineering 3D printing, industrial 3D printing, professional 3D printing, additive manufacturing, small batch production, serial production, custom plastic parts, plastic parts manufacturing, custom parts manufacturing, custom components, replacement parts, spare parts, 3D printed parts, plastic components, custom enclosures, electronic enclosures, Arduino enclosure, Raspberry Pi enclosure, ESP32 enclosure, prototype manufacturing, 3D modeling, custom 3D modeling, CAD modeling, STL printing, print from STL, print from STEP, print from CAD file, 3D printing from drawing, 3D printed gears, spur gears, custom gears, bushings, brackets, mounts, clips, holders, organizers, hooks, caps, covers, knobs, handles, furniture fittings, furniture connectors, appliance parts, vacuum cleaner parts, refrigerator parts, washing machine parts, coffee machine parts, automotive parts, motorcycle parts, drone parts, FPV drone parts, RC parts, robotics parts, functional prototypes, mechanical parts, engineering prototypes, PLA, PETG, ABS, ASA, TPU, Nylon, PA12, carbon fiber filament, reinforced filament, flexible filament, heat resistant plastic, durable plastic, 3D printed figurines, 3D miniatures, tabletop miniatures, statues, collectibles, gifts, souvenirs, toys, cosplay props, cosplay accessories, masks, helmets, movie props, aircraft models, car models, tank models, ship models, board game pieces, chess pieces, dice, gaming accessories, LEGO compatible parts, LEGO compatible bricks, Pokémon 3D print, Minecraft 3D print, Roblox 3D print, Fortnite 3D print, Brawl Stars 3D print, Marvel 3D print, Star Wars 3D print, Warhammer miniatures, D&D miniatures, personalized gifts, custom gifts, custom figurines, print from photo, print custom object, where to order 3D printing, affordable 3D printing, fast 3D printing, high quality 3D printing, large format 3D printing, custom manufacturing, Ukraine 3D printing, Lviv 3D printing, Kyiv 3D printing, Kharkiv 3D printing, Odesa 3D printing, Dnipro 3D printing",
     },
     nav: {
       services: "Services",
@@ -331,7 +333,11 @@ export const translations = {
         { value: "894", label: "completed projects" },
         { value: "2 years", label: "on the market" },
         { value: "20 µm", label: "print precision" },
-        { value: "24 h", label: "minimum lead time", label2: "(from order to shipment)" },
+        {
+          value: "24 h",
+          label: "minimum lead time",
+          label2: "(from order to shipment)",
+        },
       ],
     },
     services: {
@@ -386,7 +392,8 @@ export const translations = {
       subtitle: "Printed using modern engineering and consumer-grade filaments",
       accuracy: "Layer height:",
       noteStrong: "High speed with excellent accuracy. ",
-      noteText: "We choose the best material based on strength, heat resistance and application.",
+      noteText:
+        "We choose the best material based on strength, heat resistance and application.",
       items: [
         {
           name: "PLA",
@@ -441,7 +448,8 @@ export const translations = {
     },
     pricing: {
       title: "Pricing",
-      subtitle: "Pricing depends on material, model weight and print complexity",
+      subtitle:
+        "Pricing depends on material, model weight and print complexity",
       featured: "Most popular",
       cta: "Get a quote",
       plans: [
@@ -593,4 +601,4 @@ export const translations = {
       rights: "All rights reserved.",
     },
   },
-}
+};
