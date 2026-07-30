@@ -1,32 +1,32 @@
-import ModelSlider from "./ModelSlider.jsx"
-import Reveal from "./Reveal.jsx"
-import { useLang } from "../i18n.jsx"
+import ModelSlider from "./ModelSlider.jsx";
+import Reveal from "./Reveal.jsx";
+import { useLang } from "../i18n.jsx";
+import model1 from "../assets/1-3d-model.png";
+import model2 from "../assets/2-3d-model.png";
+import model3 from "../assets/3-3d-model.png";
+import model4 from "../assets/4-3d-model.png";
 
 const projectVisuals = [
   {
     year: "2026",
-    gradient: "linear-gradient(135deg,#20314d,#30588c)",
-    icon: "⚙️",
+    image: model1,
   },
   {
     year: "2026",
-    gradient: "linear-gradient(135deg,#2b2b2b,#575757)",
-    icon: "🐉",
+    image: model2,
   },
   {
     year: "2026",
-    gradient: "linear-gradient(135deg,#29463b,#3b7d61)",
-    icon: "📱",
+    image: model3,
   },
   {
     year: "2026",
-    gradient: "linear-gradient(135deg,#493019,#8f5d29)",
-    icon: "🔩",
+    image: model4,
   },
-]
+];
 
 export default function Portfolio() {
-  const { t } = useLang()
+  const { t } = useLang();
 
   return (
     <section id="portfolio" className="section">
@@ -44,14 +44,18 @@ export default function Portfolio() {
 
         <div className="portfolio__grid">
           {t.portfolio.projects.map((p, i) => (
-            <Reveal as="article" key={p.title} className="portfolio-card" delay={i * 90}>
-              <div
-                className="portfolio-card__image"
-                style={{ background: projectVisuals[i].gradient }}
-              >
-                <span className="portfolio-card__icon" aria-hidden="true">
-                  {projectVisuals[i].icon}
-                </span>
+            <Reveal
+              as="article"
+              key={p.title}
+              className="portfolio-card"
+              delay={i * 90}
+            >
+              <div className="portfolio-card__image">
+                <img
+                  src={projectVisuals[i].image}
+                  alt={p.title}
+                  loading="lazy"
+                />
               </div>
               <div className="portfolio-card__body">
                 <div className="portfolio-card__meta">
@@ -65,5 +69,5 @@ export default function Portfolio() {
         </div>
       </div>
     </section>
-  )
+  );
 }

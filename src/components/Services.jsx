@@ -1,8 +1,19 @@
-import { useLang } from '../i18n.jsx'
-import Reveal from './Reveal.jsx'
+import { useLang } from "../i18n.jsx";
+import Reveal from "./Reveal.jsx";
+
+import img1 from "../assets/1-service.jpg";
+import img2 from "../assets/2-service.webp";
+import img3 from "../assets/3-service.jpg";
+import img4 from "../assets/4-service.jpg";
+import img5 from "../assets/5-service.jpg";
+import img6 from "../assets/6-srevice.webp";
+import img7 from "../assets/7-service.jpg";
+import img8 from "../assets/8-service.jpg";
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 export default function Services() {
-  const { t } = useLang()
+  const { t } = useLang();
 
   return (
     <section id="services" className="section">
@@ -10,6 +21,7 @@ export default function Services() {
         <Reveal as="h2" className="section__title" variant="blur">
           {t.services.title}
         </Reveal>
+
         <Reveal as="p" className="section__subtitle" delay={100}>
           {t.services.subtitle}
         </Reveal>
@@ -22,16 +34,23 @@ export default function Services() {
               className="card service-card"
               delay={(i % 4) * 90}
             >
-              <div className="service-card__icon">{s.icon}</div>
-              <h3 className="service-card__title">{s.title}</h3>
-              <p className="service-card__text">{s.text}</p>
-              <a href="#contact" className="service-card__link">
-                {t.services.order}
-              </a>
+              <div className="service-card__image">
+                <img src={s.image} alt={s.title} />
+              </div>
+
+              <div className="service-card__content">
+                <h3 className="service-card__title">{s.title}</h3>
+
+                <p className="service-card__text">{s.text}</p>
+
+                <a href="#contact" className="service-card__link">
+                  {t.services.order}
+                </a>
+              </div>
             </Reveal>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

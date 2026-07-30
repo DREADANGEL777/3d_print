@@ -44,42 +44,42 @@ export const translations = {
       order: "Замовити друк →",
       items: [
         {
-          icon: "🏰",
+          image: "/src/assets/1-service.jpg",
           title: "Мініатюри",
           text: "Деталізовані масштабні моделі для настільних ігор, колекцій та макетів.",
         },
         {
-          icon: "⚙️",
+          image: "/src/assets/2-service.webp",
           title: "Функціональні деталі",
           text: "Компоненти складної форми для промисловості й побуту, стійкі до навантажень.",
         },
         {
-          icon: "🧠",
+          image: "/src/assets/3-service.jpg",
           title: "Освітні моделі",
           text: "Анатомічні, архітектурні та навчальні моделі для освіти, презентацій і демонстрацій.",
         },
         {
-          icon: "💍",
+          image: "/src/assets/4-service.jpg",
           title: "Сувенірні вироби",
           text: "Підвіски, ремінці для годинників, браслети та інші вироби з високою деталізацією.",
         },
         {
-          icon: "🏺",
+          image: "/src/assets/5-service.jpg",
           title: "Декор",
           text: "Вази, фігурки, фоторамки та ексклюзивні предмети інтерʼєру.",
         },
         {
-          icon: "🚀",
+          image: "/src/assets/6-srevice.webp",
           title: "Промислові прототипи",
           text: "Швидке прототипування для тестування ідей перед серійним виробництвом.",
         },
         {
-          icon: "🔩",
+          image: "/src/assets/7-service.jpg",
           title: "Технічні деталі",
           text: "Шестерні, підшипники, кріплення та запчастини, яких немає у продажу.",
         },
         {
-          icon: "🖥️",
+          image: "/src/assets/8-service.jpg",
           title: "3D-моделювання",
           text: "Створюємо модель з нуля за кресленням, фото або власним ескізом.",
         },
@@ -297,7 +297,7 @@ export const translations = {
     footer: {
       tagline: "Студія 3D-моделювання та друку. Від ідеї до готового виробу.",
       address: "м. Львів, вул. Прикладна, 8",
-      rights: "Усі права захищено.",
+      rights: "Усі права захищено. Створив InVeStOr.",
     },
   },
 
@@ -341,52 +341,54 @@ export const translations = {
       ],
     },
     services: {
-      title: "What we print",
-      subtitle: "Full cycle: modeling, printing, post-processing and delivery",
-      order: "Order printing →",
+      title: "What We Print",
+      subtitle:
+        "Complete service: 3D modeling, printing, post-processing, and delivery",
+      order: "Order Printing →",
       items: [
         {
-          icon: "🏰",
+          image: "/src/assets/1-service.jpg",
           title: "Miniatures",
-          text: "Detailed scale models for tabletop games, collections and dioramas.",
+          text: "Highly detailed scale models for tabletop games, collections, and display projects.",
         },
         {
-          icon: "⚙️",
-          title: "Functional parts",
-          text: "Complex-shaped components for industry and home, built to withstand loads.",
+          image: "/src/assets/2-service.webp",
+          title: "Functional Parts",
+          text: "Durable custom components for industrial and everyday applications, designed to withstand heavy use.",
         },
         {
-          icon: "🧠",
+          image: "/src/assets/3-service.jpg",
           title: "Educational Models",
           text: "Anatomical, architectural, and educational models for learning, presentations, and demonstrations.",
         },
         {
-          icon: "💍",
-          title: "Souvenir Products",
-          text: "Pendants, watch straps, bracelets, and other highly detailed custom-made items.",
+          image: "/src/assets/4-service.jpg",
+          title: "Souvenirs & Accessories",
+          text: "Keychains, watch straps, bracelets, and other custom-made items with exceptional detail.",
         },
         {
-          icon: "🏺",
-          title: "Decor",
-          text: "Vases, figurines, photo frames and exclusive interior pieces.",
+          image: "/src/assets/5-service.jpg",
+          title: "Home Decor",
+          text: "Vases, figurines, photo frames, and unique decorative pieces for your interior.",
         },
         {
-          icon: "🚀",
-          title: "Industrial prototypes",
-          text: "Rapid prototyping to test ideas before mass production.",
+          image: "/src/assets/6-srevice.webp",
+          title: "Industrial Prototypes",
+          text: "Rapid prototyping to test ideas and designs before mass production.",
         },
         {
-          icon: "🔩",
-          title: "Technical parts",
-          text: "Gears, bearings, mounts and spare parts you can’t find in stores.",
+          image: "/src/assets/7-service.jpg",
+          title: "Technical Parts",
+          text: "Custom gears, bearings, mounts, and replacement parts that are difficult or impossible to find on the market.",
         },
         {
-          icon: "🖥️",
-          title: "3D modeling",
-          text: "We create a model from scratch based on a drawing, photo or your sketch.",
+          image: "/src/assets/8-service.jpg",
+          title: "3D Modeling",
+          text: "We create 3D models from scratch based on drawings, photos, or your own sketches.",
         },
       ],
     },
+
     technologies: {
       title: "Printing technology & materials",
       subtitle: "Printed using modern engineering and consumer-grade filaments",
@@ -598,7 +600,7 @@ export const translations = {
     footer: {
       tagline: "3D modeling & printing studio. From idea to finished product.",
       address: "8 Prykladna St., Lviv",
-      rights: "All rights reserved.",
+      rights: "All rights reserved. Made by InVeStOr.",
     },
   },
 };
