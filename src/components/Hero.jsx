@@ -1,12 +1,18 @@
-import { useLang } from "../i18n.jsx"
-import Reveal from "./Reveal.jsx"
-import HeroModel from "./HeroModel.jsx"
+import { useLang } from "../i18n.jsx";
+import Reveal from "./Reveal.jsx";
+import HeroModel from "./HeroModel.jsx";
+import heroBackground from "../assets/hero-background.webp";
 
 export default function Hero() {
-  const { t } = useLang()
+  const { t } = useLang();
 
   return (
-    <section className="hero">
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `url(${heroBackground})`,
+      }}
+    >
       <div className="hero__glow" aria-hidden="true" />
 
       <div className="container hero__inner">
@@ -58,5 +64,5 @@ export default function Hero() {
         </Reveal>
       </div>
     </section>
-  )
+  );
 }
