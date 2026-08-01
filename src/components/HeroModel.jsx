@@ -33,12 +33,10 @@ function Model() {
 
     wrapper.add(model);
 
-    // центрування моделі
     model.position.set(-center.x, -box.min.y, -center.z);
 
     const maxSize = Math.max(size.x, size.y, size.z);
 
-    // 🔥 збільшений масштаб
     if (maxSize > 0) {
       wrapper.scale.setScalar(3.2 / maxSize);
     }
@@ -76,7 +74,7 @@ function Model() {
   useFrame((state) => {
     if (!group.current) return;
 
-    group.current.position.y = Math.sin(state.clock.elapsedTime * 1.4) * 0.05;
+    group.current.position.y = Math.sin(state.clock.elapsedTime * 1.4) * 0.1;
   });
 
   return <group ref={group} />;
@@ -88,9 +86,8 @@ export default function HeroModel() {
       shadows
       dpr={[1, 2]}
       camera={{
-        position: [0, -5, 1.2],
-
-        fov: 32,
+        position: [0, -6, 1.4],
+        fov: 38,
       }}
       onCreated={({ camera }) => {
         camera.lookAt(new THREE.Vector3(0, 3, 0));

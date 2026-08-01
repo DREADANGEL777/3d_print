@@ -1286,7 +1286,7 @@ a {
 .hero__model {
   position: relative;
   width: min(100%, 560px);
-  height: 650px;
+  height: 700px;
   border-radius: 32px;
   transition: transform 0.45s ease;
   overflow: visible;
@@ -1335,9 +1335,10 @@ a {
 
 .hero__model canvas {
   width: 100% !important;
-  height: 100% !important;
+  height: 700px !important;
+  transform: translateY(-100px);
   display: block;
-  cursor: default;
+  margin: 0 auto;
 }
 
 .hero__visual:hover .hero__model {
