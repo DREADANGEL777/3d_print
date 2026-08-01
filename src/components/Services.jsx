@@ -6,7 +6,7 @@ import img2 from "../assets/2-service.webp";
 import img3 from "../assets/3-service.jpg";
 import img4 from "../assets/4-service.jpg";
 import img5 from "../assets/5-service.jpg";
-import img6 from "../assets/6-srevice.webp";
+import img6 from "../assets/6-srevice.webp"; // Якщо файл називається 6-service.webp - виправ назву тут!
 import img7 from "../assets/7-service.jpg";
 import img8 from "../assets/8-service.jpg";
 
@@ -35,7 +35,7 @@ export default function Services() {
               delay={(i % 4) * 90}
             >
               <div className="service-card__image">
-                <img src={s.image} alt={s.title} />
+                <img src={images[i]} alt={s.title} loading="lazy" />
               </div>
 
               <div className="service-card__content">
