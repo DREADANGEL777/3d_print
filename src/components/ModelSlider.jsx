@@ -12,8 +12,8 @@ import { useLang } from "../i18n.jsx";
 import * as THREE from "three";
 
 const models = [
-  "/models/planetary-gear.glb",
-  "/models/articulated-dragon.glb",
+  "/models/planetary_gear.glb",
+  "/models/vase.glb",
   "/models/phone-stand.glb",
   "/models/gearbox.glb",
 ];

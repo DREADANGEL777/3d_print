@@ -1,14 +1,14 @@
 import { useLang } from "../i18n.jsx";
 import Reveal from "./Reveal.jsx";
 
-import img1 from "../assets/1-service.jpg";
+import img1 from "../assets/1-service.webp";
 import img2 from "../assets/2-service.webp";
-import img3 from "../assets/3-service.jpg";
-import img4 from "../assets/4-service.jpg";
-import img5 from "../assets/5-service.jpg";
-import img6 from "../assets/6-srevice.webp"; // Якщо файл називається 6-service.webp - виправ назву тут!
-import img7 from "../assets/7-service.jpg";
-import img8 from "../assets/8-service.jpg";
+import img3 from "../assets/3-service.webp";
+import img4 from "../assets/4-service.webp";
+import img5 from "../assets/5-service.webp";
+import img6 from "../assets/6-service.webp";
+import img7 from "../assets/7-service.webp";
+import img8 from "../assets/8-service.webp";
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 

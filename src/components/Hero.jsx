@@ -1,7 +1,7 @@
 import { useLang } from "../i18n.jsx";
 import Reveal from "./Reveal.jsx";
 import HeroModel from "./HeroModel.jsx";
-import heroBackground from "../assets/hero-background.webp";
+import heroBackground from "../assets/hero-background_1.webp";
 
 export default function Hero() {
   const { t } = useLang();
