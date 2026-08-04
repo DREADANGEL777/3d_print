@@ -2,8 +2,8 @@ import ModelSlider from "./ModelSlider.jsx";
 import Reveal from "./Reveal.jsx";
 import { useLang } from "../i18n.jsx";
 import model1 from "../assets/y.webp";
-import model2 from "../assets/t.webp";
-import model3 from "../assets/u.webp";
+import model2 from "../assets/u.webp";
+import model3 from "../assets/t.webp";
 import model4 from "../assets/i.webp";
 
 const projectVisuals = [

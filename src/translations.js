@@ -198,7 +198,7 @@ export const translations = {
           category: "Інженерні механізми",
         },
         {
-          title: "Артикульований дракон",
+          title: "Ваза",
           category: "Декоративні вироби",
         },
         {
@@ -222,7 +222,7 @@ export const translations = {
           category: "Інженерні механізми",
         },
         {
-          title: "Артикульований дракон",
+          title: "Ваза",
           category: "Декоративні вироби",
         },
         {
@@ -502,7 +502,7 @@ export const translations = {
           category: "Engineering Mechanisms",
         },
         {
-          title: "Articulated Dragon",
+          title: "Vase",
           category: "Decorative Models",
         },
         {
@@ -526,7 +526,7 @@ export const translations = {
           category: "Engineering Mechanisms",
         },
         {
-          title: "Articulated Dragon",
+          title: "Vase",
           category: "Decorative Models",
         },
         {
