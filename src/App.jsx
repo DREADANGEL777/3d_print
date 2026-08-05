@@ -1,19 +1,20 @@
-import { Helmet } from "react-helmet-async"
-import { schema } from "./seo/schema.js"
-import { useLang } from "./i18n.jsx"
-import Header from "./components/Header.jsx"
-import Hero from "./components/Hero.jsx"
-import Services from "./components/Services.jsx"
-import Technologies from "./components/Technologies.jsx"
-import Process from "./components/Process.jsx"
-import Pricing from "./components/Pricing.jsx"
-import Portfolio from "./components/Portfolio.jsx"
-import Testimonials from "./components/Testimonials.jsx"
-import Contact from "./components/Contact.jsx"
-import Footer from "./components/Footer.jsx"
+import { Helmet } from "react-helmet-async";
+import { schema } from "./seo/schema.js";
+import { useLang } from "./i18n.jsx";
+import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
+import Services from "./components/Services.jsx";
+import Technologies from "./components/Technologies.jsx";
+import Process from "./components/Process.jsx";
+import Pricing from "./components/Pricing.jsx";
+import Portfolio from "./components/Portfolio.jsx";
+import Testimonials from "./components/Testimonials.jsx";
+import FAQ from "./components/FAQ";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function App() {
-  const { t } = useLang()
+  const { t } = useLang();
   return (
     <>
       <Helmet>
@@ -47,9 +48,10 @@ export default function App() {
         <Pricing />
         <Portfolio />
         <Testimonials />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
     </>
-  )
+  );
 }

@@ -7,6 +7,7 @@ const navOrder = [
   "pricing",
   "portfolio",
   "reviews",
+  "faq",
   "contact",
 ];
 

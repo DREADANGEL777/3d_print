@@ -13,6 +13,7 @@ export const translations = {
       pricing: "Ціни",
       portfolio: "Портфоліо",
       reviews: "Відгуки",
+      faq: "FAQ",
       contact: "Контакти",
     },
     header: {
@@ -262,6 +263,34 @@ export const translations = {
         },
       ],
     },
+    faq: {
+      title: "Часті запитання",
+      subtitle: "Відповіді на питання, які нам ставлять найчастіше.",
+
+      q1: "Які послуги ви надаєте?",
+      a1: "Ми займаємося 3D-моделюванням, 3D-друком, створенням прототипів, деталей, сувенірів та інших виробів.",
+
+      q2: "Чи можна замовити друк без моделі?",
+      a2: "Так. Ми можемо створити модель за вашим ескізом, кресленням або фотографією.",
+
+      q3: "Які формати підтримуються?",
+      a3: "STL, STEP, OBJ, 3MF, FBX, GLB та інші популярні формати.",
+
+      q4: "Скільки коштує друк?",
+      a4: "Ціна залежить від матеріалу, розміру моделі, складності та часу друку.",
+
+      q5: "Які матеріали використовуються?",
+      a5: "PLA, PETG, ABS, TPU та інші матеріали залежно від ваших потреб.",
+
+      q6: "Скільки триває виготовлення?",
+      a6: "Зазвичай від одного до п'яти робочих днів.",
+
+      q7: "Чи є доставка?",
+      a7: "Так. Ми відправляємо замовлення по всій Україні.",
+
+      q8: "Чи можна зробити індивідуальний проєкт?",
+      a8: "Так. Ми виконуємо індивідуальні замовлення будь-якої складності.",
+    },
     contact: {
       title: "Звʼяжіться з нами",
       lead: "Надішліть модель, малюнок, креслення, ескіз або просто опишіть ідею — ",
@@ -315,6 +344,7 @@ export const translations = {
       pricing: "Pricing",
       portfolio: "Portfolio",
       reviews: "Reviews",
+      faq: "FAQ",
       contact: "Contact",
     },
     header: {
@@ -565,6 +595,34 @@ export const translations = {
           text: "They made a housing prototype for our startup in a week, including three iterations of revisions. Highly recommend!",
         },
       ],
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle: "Answers to the questions we receive most often.",
+
+      q1: "What services do you provide?",
+      a1: "We specialize in 3D modeling, 3D printing, prototypes, functional parts and custom products.",
+
+      q2: "Can I order printing without a 3D model?",
+      a2: "Yes. We can create a 3D model from your sketch, drawing or idea.",
+
+      q3: "Which file formats do you support?",
+      a3: "STL, STEP, OBJ, 3MF, FBX, GLB and many other popular formats.",
+
+      q4: "How much does 3D printing cost?",
+      a4: "The price depends on the model size, material, complexity and printing time.",
+
+      q5: "Which materials do you use?",
+      a5: "PLA, PETG, ABS, TPU and other materials depending on the project.",
+
+      q6: "How long does production take?",
+      a6: "Usually between one and five business days.",
+
+      q7: "Do you ship across Ukraine?",
+      a7: "Yes, we ship orders throughout Ukraine.",
+
+      q8: "Can I order a custom project?",
+      a8: "Absolutely. We create custom projects of any complexity.",
     },
     contact: {
       title: "Get in touch",
