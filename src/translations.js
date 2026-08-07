@@ -199,7 +199,7 @@ export const translations = {
           category: "Інженерні механізми",
         },
         {
-          title: "Ваза",
+          title: "Фоторамки",
           category: "Декоративні вироби",
         },
         {
@@ -223,7 +223,7 @@ export const translations = {
           category: "Інженерні механізми",
         },
         {
-          title: "Ваза",
+          title: "Фоторамки",
           category: "Декоративні вироби",
         },
         {
@@ -532,7 +532,7 @@ export const translations = {
           category: "Engineering Mechanisms",
         },
         {
-          title: "Vase",
+          title: "Photo frames",
           category: "Decorative Models",
         },
         {
@@ -556,7 +556,7 @@ export const translations = {
           category: "Engineering Mechanisms",
         },
         {
-          title: "Vase",
+          title: "Photo frames",
           category: "Decorative Models",
         },
         {

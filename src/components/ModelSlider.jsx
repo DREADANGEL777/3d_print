@@ -1,11 +1,4 @@
-import {
-  Suspense,
-  useMemo,
-  useLayoutEffect,
-  useRef,
-  useEffect,
-  useState,
-} from "react";
+import { Suspense, useMemo, useLayoutEffect, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, useGLTF, CameraControls } from "@react-three/drei";
 import { useLang } from "../i18n.jsx";
@@ -13,7 +6,7 @@ import * as THREE from "three";
 
 const models = [
   "/models/planetary_gear.glb",
-  "/models/vase.glb",
+  "/models/photo-frames.glb",
   "/models/phone-stand.glb",
   "/models/gearbox.glb",
 ];
@@ -72,28 +65,20 @@ function Scene({ path }) {
   useEffect(() => {
     if (!controlsRef.current) return;
 
-    const controls = controlsRef.current;
-
-    controls.setLookAt(0, 1.2, 4, 0, 0.8, 0, true);
-
-    controls.setTarget(0, 0.8, 0, false);
-
-    controls.update();
+    controlsRef.current.setLookAt(0, 1.2, 4, 0, 0.8, 0, true);
+    controlsRef.current.setTarget(0, 0.8, 0, false);
+    controlsRef.current.update();
   }, [path]);
 
   return (
     <>
       <ambientLight intensity={1.4} />
-
       <directionalLight position={[5, 8, 5]} intensity={2.5} castShadow />
-
       <directionalLight position={[-5, 4, -5]} intensity={1} />
-
       <hemisphereLight intensity={0.8} />
 
       <Suspense fallback={null}>
         <Viewer path={path} />
-
         <Environment preset="city" />
       </Suspense>
 
@@ -103,30 +88,25 @@ function Scene({ path }) {
         smoothTime={0.25}
         minDistance={2}
         maxDistance={8}
-        // забороняємо зсув моделі мишкою
         truckSpeed={0}
-        // дозволяємо тільки обертання
         azimuthRotateSpeed={1}
         polarRotateSpeed={1}
-        // плавність
         dampingFactor={0.05}
       />
     </>
   );
 }
 
-export default function ModelSlider() {
-  const [index, setIndex] = useState(0);
-
+export default function ModelSlider({ index, onChange }) {
   const { t } = useLang();
   const { title, category } = t.slider.slides[index];
 
   const prev = () => {
-    setIndex((i) => (i - 1 + models.length) % models.length);
+    onChange((index - 1 + models.length) % models.length);
   };
 
   const next = () => {
-    setIndex((i) => (i + 1) % models.length);
+    onChange((index + 1) % models.length);
   };
 
   return (
@@ -169,9 +149,9 @@ export default function ModelSlider() {
       <div className="model-slider__caption">
         <div>
           <span className="model-slider__category">{category}</span>
-
           <h3 className="model-slider__title">{title}</h3>
         </div>
+
         <div className="model-slider__dots" role="tablist">
           {t.slider.slides.map((slide, i) => (
             <button
@@ -180,7 +160,7 @@ export default function ModelSlider() {
               className={`model-slider__dot${
                 i === index ? " model-slider__dot--active" : ""
               }`}
-              onClick={() => setIndex(i)}
+              onClick={() => onChange(i)}
               aria-label={slide.title}
               aria-selected={i === index}
               role="tab"

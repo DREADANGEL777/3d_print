@@ -1285,6 +1285,7 @@ a {
 
 .hero__model {
   position: relative;
+  transform: translateY(20px);
   width: min(100%, 560px);
   height: 700px;
   border-radius: 32px;
@@ -1293,8 +1294,8 @@ a {
 }
 
 .hero-model-image {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1324,7 +1325,7 @@ a {
 }
 
 .hero__visual:hover .hero__model {
-  transform: translateY(-6px) scale(1.02);
+  transform: translateY(14px) scale(1.02);
 }
 
 @keyframes heroGlow {
