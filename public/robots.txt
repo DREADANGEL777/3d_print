@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://my-site.com/sitemap.xml
+Sitemap: https://fergoti.shop/sitemap.xml
