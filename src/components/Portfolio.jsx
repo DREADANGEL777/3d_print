@@ -4,7 +4,7 @@ import Reveal from "./Reveal.jsx";
 import { useLang } from "../i18n.jsx";
 
 import model1 from "../assets/y.webp";
-import model2 from "../assets/photo-frames.webp";
+import model2 from "../assets/vase.webp";
 import model3 from "../assets/t.webp";
 import model4 from "../assets/i.webp";
 

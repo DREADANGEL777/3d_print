@@ -6,7 +6,7 @@ import * as THREE from "three";
 
 const models = [
   "/models/planetary_gear.glb",
-  "/models/photo-frames.glb",
+  "/models/sci-fi-vase.glb",
   "/models/phone-stand.glb",
   "/models/gearbox.glb",
 ];
